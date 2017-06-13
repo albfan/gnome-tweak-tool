@@ -68,7 +68,7 @@ if __name__ == '__main__':
     gtweak.LIBEXEC_DIR = LIBEXEC_DIR
     gtweak.ENABLE_TEST = options.test
     gtweak.ALL_TWEAKS = options.load
-    gtweak.APP_NAME = "gnome-tweak-tool"
+    gtweak.APP_NAME = "gnome-tweaks"
     gtweak.VERBOSE = options.verbose
 
     if options.debug:

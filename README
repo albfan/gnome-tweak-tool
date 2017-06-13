@@ -1,5 +1,5 @@
-GNOME TWEAK TOOL
-================
+GNOME TWEAKS
+============
 
 
 BUILD
@@ -36,12 +36,12 @@ RUNNING
 -------
  * If you wish to run the application uninstalled, execute;
 
-    ./gnome-tweak-tool [-p /path/to/jhbuild/prefix/]
+    ./gnome-tweaks [-p /path/to/jhbuild/prefix/]
 
 SUPPORTED DESKTOPS
 ------------------
-Tweak Tool is designed for GNOME Shell but can be used in other desktops.
-A few features will be missing when Tweak Tool is run on a different desktop.
+Tweaks is designed for GNOME Shell but can be used in other desktops.
+A few features will be missing when Tweaks is run on a different desktop.
 
 TODO
 ----
@@ -51,14 +51,14 @@ TODO
 
 HOMEPAGE
 --------
-https://wiki.gnome.org/Apps/GnomeTweakTool
+https://wiki.gnome.org/Apps/GnomeTweaks
 
 DEVELOPMENT REPOSITORY
 ----------------------
-https://git.gnome.org/browse/gnome-tweak-tool
+https://git.gnome.org/browse/gnome-tweaks
 
 BUGS
 ----
-https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-tweak-tool
+https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-tweaks
 
-https://bugzilla.gnome.org/buglist.cgi?quicksearch=product%3Agnome-tweak-tool
+https://bugzilla.gnome.org/buglist.cgi?quicksearch=product%3Agnome-tweaks

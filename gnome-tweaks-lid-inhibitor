@@ -18,7 +18,7 @@ def on_activate(app):
                                                   'Inhibit',
                                                   GLib.Variant('(ssss)',
                                                                ('handle-lid-switch',
-                                                                'gnome-tweak-tool-lid-inhibitor',
+                                                                'gnome-tweaks-lid-inhibitor',
                                                                 'user preference',
                                                                 'block')),
                                                   None, 0, -1, None, None)

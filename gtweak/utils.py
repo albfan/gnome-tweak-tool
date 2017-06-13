@@ -1,19 +1,19 @@
-# This file is part of gnome-tweak-tool.
+# This file is part of gnome-tweaks.
 #
 # Copyright (c) 2011 John Stowers
 #
-# gnome-tweak-tool is free software: you can redistribute it and/or modify
+# gnome-tweaks is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# gnome-tweak-tool is distributed in the hope that it will be useful,
+# gnome-tweaks is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with gnome-tweak-tool.  If not, see <http://www.gnu.org/licenses/>.
+# along with gnome-tweaks.  If not, see <http://www.gnu.org/licenses/>.
 
 import os.path
 import logging
@@ -308,15 +308,15 @@ class XSettingsOverrides:
 
 class Notification:
     def __init__(self, summary, body):
-        if Notify.is_initted() or Notify.init("GNOME Tweak Tool"):
+        if Notify.is_initted() or Notify.init("GNOME Tweaks"):
             self.notification = Notify.Notification.new(
                                     summary,
                                     body,
-                                    'gnome-tweak-tool'
+                                    'gnome-tweaks'
             )
             self.notification.set_hint(
                                 "desktop-entry",
-                                GLib.Variant('s', 'gnome-tweak-tool'))
+                                GLib.Variant('s', 'gnome-tweaks'))
             self.notification.show()
         else:
             raise Exception("Not Supported")
@@ -324,18 +324,18 @@ class Notification:
 @singleton
 class LogoutNotification:
     def __init__(self):
-        if Notify.is_initted() or Notify.init(_("GNOME Tweak Tool")):
+        if Notify.is_initted() or Notify.init(_("GNOME Tweaks")):
             self.notification = Notify.Notification.new(
                                 _("Configuration changes require restart"),
                                 _("Your session needs to be restarted for settings to take effect"),
-                                'gnome-tweak-tool')
+                                'gnome-tweaks')
             self.notification.add_action(
                                 "restart",
                                 _("Restart Session"),
                                 self._logout, None, None)
             self.notification.set_hint(
                                 "desktop-entry",
-                                GLib.Variant('s', 'gnome-tweak-tool'))
+                                GLib.Variant('s', 'gnome-tweaks'))
             self.notification.show()
         else:
             raise Exception("Not Supported")
